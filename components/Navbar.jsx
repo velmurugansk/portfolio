@@ -40,8 +40,8 @@ const Navbar = () => {
                     <AiOutlineMenu />
                 </div>
             </div>  
-            <div className={!nav ? "fixed left-0 top-0 w-full h-screen bg-black/70" : "" }>
-                <div className="fixed left-0 top-0 h-screen w-[75%] sm:w-[60%] md:w-[45%] p-4 bg-[#ecf0f3] ease-in duration-500">
+            <div className={!nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : "" }>
+                <div className={!nav ? "fixed left-0 top-0 h-screen w-[75%] sm:w-[60%] md:w-[45%] p-4 bg-[#ecf0f3] ease-in duration-500" : "md:hidden fixed left-[-100%] top-0 p-4 bg-[#ecf0f3] ease-in duration-500"}>
                     <div>
                         <div className="flex items-center justify-between">
                             <Image src="/../public/assets/logo.png" alt="side-logo" width='85' height='35'></Image>
