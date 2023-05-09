@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
           <p>In 2019, I started my career as a user interface developer. In 2021, I renewed my Frontend Developer career.</p>
         </div>
         <div className="col-span-1">
-          {/* <Image src="" alt="programer-img"></Image> */}
+          <Image src="/../public/programer.svg" height="100" width="100" alt="programer-img"></Image>
         </div>
       </div>      
     </div>
