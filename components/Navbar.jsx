@@ -20,19 +20,19 @@ const Navbar = () => {
                 <div className="h-100">
                     <ul className="hidden md:flex items-center">
                         <Link href='/'>
-                            <li className="ml-5 text-sm hover:border-b uppercase">Home</li>
+                            <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">Home</li>
                         </Link>
                         <Link href='/'>
-                            <li className="ml-5 text-sm hover:border-b uppercase">About</li>
+                            <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">About</li>
                         </Link>
                         <Link href='/'>
-                            <li className="ml-5 text-sm hover:border-b uppercase">Skills</li>
+                            <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">Skills</li>
                         </Link>
                         <Link href='/'>
-                            <li className="ml-5 text-sm hover:border-b uppercase">Projects</li>
+                            <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">Projects</li>
                         </Link>
                         <Link href='/'>
-                            <li className="ml-5 text-sm hover:border-b uppercase">Contact</li>
+                            <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">Contact</li>
                         </Link>
                     </ul>
                 </div>
