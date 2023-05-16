@@ -5,7 +5,7 @@ import {IoLogoJavascript} from "react-icons/io";
 
 const Skills = () => {
   return (
-    <div className='w-full mx-auto md:h-screen p-2 px-24'>
+    <div className='w-full mx-auto md:h-100 p-2 px-24'>
       <div className="flex mx-auto flex-col justify-center h-full">
         <p className='uppercase py-3 text-[#5651e5] tracking-widest'>Skills</p>
         <h2 className="py-3">What I can do</h2>
