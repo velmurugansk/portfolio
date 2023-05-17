@@ -3,7 +3,7 @@ import {AiFillLinkedin,AiFillGithub, AiOutlineMail, AiOutlineUser} from "react-i
 
 const Mainconent = () => {
   return (
-    <div className='h-screen w-full text-center'>
+    <div className='h-screen w-full text-center' id="home">
         <div className="flex justify-center w-full h-full items-center p-2">
             <div>
                 <p className='uppercase tracking-widest text-sm text-gray-600'>Let's Build Something Together</p>

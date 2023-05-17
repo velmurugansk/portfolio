@@ -3,35 +3,48 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineMenu, AiOutlineClose, AiFillLinkedin,AiFillGithub, AiOutlineMail, AiOutlineUser} from "react-icons/ai";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 const Navbar = () => {
 
-    const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(false);
+    const [shadow, setShadow] = useState(false);
 
     const handleNav = () => {
         nav ? setNav(false) : setNav(true);
     }
 
+    useEffect( () => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true);
+            } else {
+                setShadow(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleShadow);
+    },[])
+
     return (
-        <div className="fixed w-full h-20 z-[100] shadow-xl bg-[#ecf0f3]">
+        <div className= {shadow ? "fixed w-full h-20 z-[100] shadow-xl bg-[#ecf0f3]" : "fixed w-full h-20 z-[100] bg-[#ecf0f3]" }>
             <div className="flex justify-between w-full h-full px-2 2xl:px-16 items-center">
                 <Image src="/../public/assets/logo.png" alt="logo" width="125" height="40"></Image>
                 <div className="h-100">
                     <ul className="hidden md:flex items-center">
-                        <Link href='/'>
+                        <Link href='/#home'>
                             <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">Home</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#about'>
                             <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">About</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#skills'>
                             <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">Skills</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#projects'>
                             <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">Projects</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#contact'>
                             <li className="ml-5 text-sm hover:border-b border-red-700 uppercase">Contact</li>
                         </Link>
                     </ul>
