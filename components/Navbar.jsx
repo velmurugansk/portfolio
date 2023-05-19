@@ -65,20 +65,20 @@ const Navbar = () => {
                     </div>
                     <div className="py-3 flex flex-col">
                         <ul className="uppercase">
-                            <Link href="/">
-                                <li className="py-3 px-2 text-sm">Home</li>
+                            <Link href="/#home">
+                                <li onClick={() => setNav(false)} className="py-3 px-2 text-sm">Home</li>
                             </Link>
-                            <Link href="/">
-                                <li className="py-3 px-2 text-sm">About</li>
+                            <Link href="/#about">
+                                <li onClick={() => setNav(false)} className="py-3 px-2 text-sm">About</li>
                             </Link>
-                            <Link href="/">
-                                <li className="py-3 px-2 text-sm">Skills</li>
+                            <Link href="/#skills">
+                                <li onClick={() => setNav(false)} className="py-3 px-2 text-sm">Skills</li>
                             </Link>
-                            <Link href="/">
-                                <li className="py-3 px-2 text-sm">Projects</li>
+                            <Link href="/#projects">
+                                <li onClick={() => setNav(false)} className="py-3 px-2 text-sm">Projects</li>
                             </Link>
-                            <Link href="/">
-                                <li className="py-3 px-2 text-sm">Contact</li>
+                            <Link href="/#contact">
+                                <li onClick={() => setNav(false)} className="py-3 px-2 text-sm">Contact</li>
                             </Link>
                         </ul>
                         <div className="pt-60 px-2">
