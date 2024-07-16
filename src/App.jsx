@@ -1,13 +1,14 @@
 import { useState } from 'react'
+import Header from './components/Header';
+import "./assets/font/Montserrat-Bold.ttf";
+import "./assets/font/Montserrat-Regular.ttf";
+import "./assets/font/Montserrat-SemiBold.ttf";
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App() {  
   return (
     <>
-      <h1 className='text-3xl font-bold'>Welcome to My Portfolio.</h1>
-      <p>Inprogress</p>
+      <Header/>
     </>
   )
 }
