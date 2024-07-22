@@ -1,17 +1,18 @@
 import React from 'react'
-const Titles = [{name : "Home"},{name : "Skills"},{name : "Contact"}]
+import { Link } from 'react-router-dom'
+const Titles = [{ name: "Home", path : '/' }, { name: "Skills", path : '/skills' }, { name: "About", path : '/about' },, { name: "Contact", path : '/contact' }]
 
 const Header = () => {
 
   return (
-    <div className='2xl px-4 py-2 flex justify-end'>
-      <nav>
-      <ul className='flex'>
-        {Titles.map(elem => {          
-          return (<li className='px-3 cursor-pointer' key={elem.name}>{elem.name}</li>)
-        })}
-      </ul>
-      </nav>
+    <div className='fixed w-full h-16 shadow-lg z-[2]'>
+      <div className="flex justify-end items-center px-3 w-full h-full">
+        <ul className='hidden md:flex'>
+          {Titles.map(elem => {
+            return (<li className='px-3 cursor-pointer' key={elem.name}><Link to={elem.path}>{elem.name}</Link></li>)
+          })}
+        </ul>
+      </div>
     </div>
   )
 }
