@@ -17,9 +17,9 @@ function App() {
       <Header />          
           <Routes>
             <Route exact path='/' element={<Main />}></Route>
-            <Route path='/about' element={<About />}></Route>
-            <Route path='/skills' element={<Skills />}></Route>
-            <Route path='/contact' element={<Contact />}></Route>
+            <Route path='about' element={<About />}></Route>
+            <Route path='skills' element={<Skills />}></Route>
+            <Route path='contact' element={<Contact />}></Route>
           </Routes>        
       </Router>
     </>
