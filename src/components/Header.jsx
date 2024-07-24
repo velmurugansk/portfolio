@@ -13,7 +13,7 @@ const Header = () => {
       <div className="flex justify-end items-center px-3 w-full h-full">
         <ul className='hidden md:flex'>
           {Titles.map(elem => {
-            return (<li className='px-3 cursor-pointer text-white' key={elem.name}><Link to={elem.path}>{elem.name}</Link></li>)
+            return (<li className='px-3 cursor-pointer text-white' key={elem.name}>{elem.name}</li>)
           })}
         </ul>
         <div onClick={handleClick} className="md:hidden z-[3] text-white">
@@ -21,7 +21,7 @@ const Header = () => {
         </div>
         <ul className={!resnav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen px-3 py-2 bg-[#686D76]'}>
           {Titles.map(elem => {
-            return (<li className='px-3 py-1 cursor-pointer text-white' key={elem.name}><Link to={elem.path}>{elem.name}</Link></li>)
+            return (<li className='px-3 py-1 cursor-pointer text-white' key={elem.name}>{elem.name}</li>)
           })}
         </ul>
       </div>
