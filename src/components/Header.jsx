@@ -9,7 +9,7 @@ const Header = () => {
   const [resnav, setResnav] = useState(false);
   const handleClick = () => setResnav(!resnav);
   return (
-    <div className='fixed w-full h-16 z-[2] bg-[#686D76]'>
+    <div className='fixed w-full h-16 z-[2] bg-[#151515]'>
       <div className="flex justify-end items-center px-3 w-full h-full">
         <ul className='hidden md:flex'>
           {Titles.map(elem => {
@@ -19,7 +19,7 @@ const Header = () => {
         <div onClick={handleClick} className="md:hidden z-[3] text-white">
           {!resnav ? <FaBars /> : <FaTimes /> }
         </div>
-        <ul className={!resnav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen px-3 py-2 bg-[#686D76]'}>
+        <ul className={!resnav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen px-3 py-2 bg-[#151515]'}>
           {Titles.map(elem => {
             return (<li className='px-3 py-1 cursor-pointer text-white' key={elem.name}>{elem.name}</li>)
           })}
