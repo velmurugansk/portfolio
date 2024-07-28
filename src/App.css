@@ -8,8 +8,7 @@
 @font-face {
     font-family: "MontserratRegular";
     src: local("MontserratRegular"),
-        url("./assets/font/Montserrat-Regular.ttf") format("truetype");
-    font-weight: bold;
+        url("./assets/font/Montserrat-Regular.ttf") format("truetype");    
 }
 
 @font-face {
@@ -17,4 +16,31 @@
     src: local("MontserratSemibold"),
         url("./assets/font/Montserrat-SemiBold.ttf") format("truetype");
     font-weight: bold;
+}
+
+@font-face {
+    font-family: "MontserratExtrabold";
+    src: local("MontserratExtrabold"),
+        url("./assets/font/Montserrat-ExtraBold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.name-txt {
+    font-family: MontserratExtrabold;
+}
+
+.animatedtext{
+    overflow: hidden;
+    animation: text-typing steps(40) 3s infinite;
+    width:0;
+    text-wrap: nowrap;
+}
+
+@keyframes text-typing {
+    from {
+        width: 0;
+    }
+    to {
+        width :100%;
+    }
 }
