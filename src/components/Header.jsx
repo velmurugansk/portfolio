@@ -10,7 +10,7 @@ const Header = () => {
   const handleClick = () => setResnav(!resnav);
   return (
     <div className='fixed w-full h-16 z-[2] bg-[#151515]'>
-      <div className="flex justify-end items-center px-6 w-full h-full">
+      <div className="flex justify-end items-center px-12 w-full h-full">
         <ul className='hidden md:flex'>
           {Titles.map(elem => {
             return (<li className='px-3 cursor-pointer text-white' key={elem.name}>{elem.name}</li>)
