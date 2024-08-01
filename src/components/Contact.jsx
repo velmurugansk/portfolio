@@ -39,10 +39,10 @@ const Contact = () => {
       <div>
         <p className='text-center text-3xl font-bold text-white mb-3'>Contact Me</p>
         <form onSubmit={sendMessage} className='flex flex-col w-full'>
-          <input type='text' className='my-2 p-2 w-72 sm:w-80 md:w-96 focus:outline-none focus:border-[#8644A2] border-4' placeholder='Enter your name' name="name" required />
-          <input type='email' className='my-2 p-2 w-72 sm:w-80 md:w-96 focus:outline-none focus:border-[#8644A2] border-4' placeholder='Enter your email' name="email" required />
-          <textarea rows="10" className='my-2 p-2 w-72 resize-none sm:w-80 md:w-96 focus:outline-none focus:border-[#8644A2] border-4' placeholder='Enter your message' name="message" ></textarea>
-          <button type="submit" className='text-white px-6 py-2 border-2 hover:bg-[#8644A2] hover:border-[#8644A2]'>Send Message</button>
+          <input type='text' className='my-2 p-2 w-72 sm:w-80 md:w-96 focus:outline-none bg-[#ececec] focus:border-[#8644A2] border-2' placeholder='Enter your name' name="name" required />
+          <input type='email' className='my-2 p-2 w-72 sm:w-80 md:w-96 focus:outline-none bg-[#ececec] focus:border-[#8644A2] border-2' placeholder='Enter your email' name="email" required />
+          <textarea rows="10" className='my-2 p-2 w-72 resize-none sm:w-80 md:w-96 bg-[#ececec] focus:outline-none focus:border-[#8644A2] border-2' placeholder='Enter your message' name="message" ></textarea>
+          <button type="submit" className='text-white px-6 mt-2 py-2 border-2 hover:bg-[#8644A2] hover:border-[#8644A2]'>Send Message</button>
         </form>
       </div>      
     </div>
