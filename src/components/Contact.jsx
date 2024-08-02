@@ -35,7 +35,7 @@ const Contact = () => {
   };
   return (
     <>
-    <div className='w-full h-screen bg-[#151515] flex justify-center items-center px-6 py-4'>
+    <div className='w-full h-screen bg-[#151515] flex justify-center items-center px-10 py-4'>
       <div>
         <p className='text-center text-3xl font-bold text-white mb-3'>Contact Me</p>
         <form onSubmit={sendMessage} className='flex flex-col w-full'>
